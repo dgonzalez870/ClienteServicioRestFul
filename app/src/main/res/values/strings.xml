@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Cliente Clima</string>
+    <string name="accion_ciudad">Seleccionar Ciudad</string>
+</resources>
