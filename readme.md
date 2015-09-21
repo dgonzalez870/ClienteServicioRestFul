@@ -75,7 +75,8 @@ public class DatosClima {
 		
 	}
 }
-``` 
+```
+
 ####Configuración de GSON
 
 Para trabajar con [GSON](https://google-gson.googlecode.com/svn/trunk/gson/docs/javadocs/com/google/gson/Gson.html). debe incluirse las [**dependencias GSON para gradle**](http://mvnrepository.com/artifact/com.google.code.gson/gson/2.3.1) en el archivo **/app/build.gradle**.
@@ -170,7 +171,7 @@ Crear un __layout__ de nombre __layout_cliente_clima.xml__
 </TableLayout>
 ```
 
-![layout](/capturas/inicio.png)
+![layout](/capturas/inicial.png)
 
 Crear un layout para el formulario en el que se solicita el nombre de la ciudad __layout_registro_ciudad.xml__
 ```xml
@@ -218,7 +219,13 @@ Crear el recurso **string** para la acción del __menu__ en el archivo **/app/sr
 
 ### Activity
 
-Crear un **Activity** de nombre __ClienteClimaActivity__, asignar la vista al activity en el método **onCreate** `setContentView(R.layout.layout_cliente_clima);`, obtener instancias de los **TextView** con texto en color rojo de __layout_cliente_clima.xml__ utilizando el método `findViewById`.
+Crear un **Activity** de nombre __ClienteClimaActivity__. Crear un String con la dirección del servicio
+```java
+    //Ruta al API OpenWeatherMap Inc. que provee información del clima.
+    public static final String urlServicio="http://api.openweathermap.org/data/2.5/weather?q=";
+```
+
+Asignar la vista al activity en el método **onCreate** `setContentView(R.layout.layout_cliente_clima);`, obtener instancias de los **TextView** con texto en color rojo de __layout_cliente_clima.xml__ utilizando el método `findViewById`.
 
 ```java
     @Override
