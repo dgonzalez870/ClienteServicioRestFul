@@ -171,7 +171,7 @@ Crear un __layout__ de nombre __layout_cliente_clima.xml__
 </TableLayout>
 ```
 
-![layout](/capturas/inicial.png)
+![inicio](/capturas/inicial.png)
 
 Crear un layout para el formulario en el que se solicita el nombre de la ciudad __layout_registro_ciudad.xml__
 ```xml
