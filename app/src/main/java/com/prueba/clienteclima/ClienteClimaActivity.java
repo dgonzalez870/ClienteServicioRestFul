@@ -1,6 +1,5 @@
 package com.prueba.clienteclima;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -9,6 +8,7 @@ import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,7 +22,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class ClienteClimaActivity extends Activity {
+public class ClienteClimaActivity extends AppCompatActivity {
 
     //Ruta al API OpenWeatherMap Inc. que provee información del clima.
     public static final String urlServicio="http://api.openweathermap.org/data/2.5/weather?q=";
@@ -147,7 +147,7 @@ public class ClienteClimaActivity extends Activity {
             }
             tvCiudad.setText(datosClima.getName());
             tvTemperatura.setText(datosClima.getMain().getTemp() + " ºC");
-            tvPresion.setText(datosClima.getMain().getPressure() + " mmHg");
+            tvPresion.setText(datosClima.getMain().getPressure() + " hPa");
             tvHumedad.setText(datosClima.getMain().getHumidity()+" %");
         }
     }

@@ -134,7 +134,7 @@ Crear un __layout__ de nombre __layout_cliente_clima.xml__
             android:textSize="25sp"
             android:textColor="#FF0000"
             android:id="@+id/tvPresion"
-            android:text="00mmHg"
+            android:text="00 hpa"
             android:gravity="center"
             android:padding="3dip"
             android:layout_column="3"/>
@@ -363,7 +363,7 @@ Crear una subclase de [**AsyncTask**](https://github.com/dgonzalez870/AsyncTaskD
             }
             tvCiudad.setText(datosClima.getName());
             tvTemperatura.setText(datosClima.getMain().getTemp() + " ºC");
-            tvPresion.setText(datosClima.getMain().getPressure() + " mmHg");
+            tvPresion.setText(datosClima.getMain().getPressure() + " hPa");
             tvHumedad.setText(datosClima.getMain().getHumidity()+" %");
         }
     }
